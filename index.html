@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rycko</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://codepen.io/MaciejCaputa/pen/EmMooZ.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  
+  <div id="wrapper">
+  <div id="content">
+    <div id="card">
+      <div id="front">
+        <div id="arrow"><i class="fa fa-arrow-left"></i></div>
+        <div id="top-pic"></div>
+        <div id="avatar"></div>
+        <div id="info-box">
+          <div class="info">
+            <h1>Rycko</h1>
+            <h2>Web Developer</h2>
+          </div>
+        </div>
+        <div id="social-bar"><a href="https://www.linkedin.com/in/ricardo-contreras-ramos/" target="_blank"><i class="fa fa-linkedin" title="linkedin profile
+"></i></a><a href="#" target="_blank"><i class="fa fa-facebook" title="facebook page"> </i></a><a href="https://rycko.online" target="_blank"><i class="fa fa-code" title="website"> </i></a> <a class="more-info" href="#"><i class="fa fa-user" title="More info"></i></a></div>
+      </div>
+      <div id="back">
+        <div class="back-info">
+          <p>Hi! My name is Ricardo Contreras (Rycko). I am intensely creative, web developer and designer. I am passionate about creating original websites and marketing resources. I also specialize in creating modern landing pages, digital magazine, banners, posters, cover for social network, e-commerce, SEO campaing, web server configurations, for companies that will increase their income. If you are interested in any of my services, contact me. Contact me at <a href="https://rycko.online" target="_blank">rycko.online</a> or in my email rycko.arcr@gmail.com</p>
+        </div>
+        <div id="social-bar">
+        <a href="https://www.linkedin.com/in/ricardo-contreras-ramos/" target="_blank">
+        <i class="fa fa-linkedin" title="linkedin profile"></i></a>
+        <a href="#" target="_blank" title="Linkedin"><i class="fa fa-facebook" title="facebook page"> </i></a>
+        <a href="https://rycko.online" target="_blank"><i class="fa fa-code" title="website"> </i></a>
+        <a class="more-info" href="#" title="Flip"><i class="fa fa-undo"></i></a></div>
+      </div>
+    </div>
+    <div id="background">
+      <div id="background-image"></div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+
+
+$('.more-info').click(function(){
+  $("#card").toggleClass('flip');
+});
+$('#background').click(function(){
+  $('#card').removeClass('flip');
+})
+  </script>
+</body>
+</html>
